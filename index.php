@@ -4,7 +4,7 @@
 
 //$connection = DB::getInstance();
 
-?>
+//?> 
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
@@ -47,7 +47,7 @@
             </div>
         </div>
 
-        <form role="form" action="action.php" method="POST">
+        <form role="form" action="action.php" method="post">
             <div class="panel panel-primary setup-content" id="step-1">
                 <div class="panel-heading">
                     <h3 class="panel-title">Registration</h3>
@@ -93,7 +93,7 @@
                 </div>
             </div>
 
-             <div class="panel panel-primary setup-content" id="step-2">
+            <div class="panel panel-primary setup-content" id="step-2">
                 <div class="panel-heading">
                     <h3 class="panel-title">Company Information</h3>
                 </div>

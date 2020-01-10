@@ -1,10 +1,10 @@
 <?php
 
-//require_once "./database/db.php";
+require_once "./database/db.php";
 
-//$connection = DB::getInstance();
+$connection = DB::getInstance();
 
-//?> 
+?>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
@@ -47,7 +47,7 @@
             </div>
         </div>
 
-        <form role="form" action="action.php" method="post">
+        <form role="form" action="action.php" method="POST">
             <div class="panel panel-primary setup-content" id="step-1">
                 <div class="panel-heading">
                     <h3 class="panel-title">Registration</h3>
@@ -64,31 +64,29 @@
 
                     <div class="form-group">
                         <label class="control-label">Birthday</label>
-                        <input maxlength="100" type="date" required="required" class="form-control" placeholder="Birthday" />
+                        <input name="birthday" maxlength="100" type="date" required="required" class="form-control" placeholder="Birthday" />
                     </div>
                     <div class="form-group">
                         <label class="control-label">Report Subject</label>
-                        <input maxlength="100" type="text" required="required" class="form-control" placeholder="Enter Report Subject" />
+                        <input name="rs" maxlength="100" type="text" required="required" class="form-control" placeholder="Enter Report Subject" />
                     </div>
 
                     <div class="form-group">
                         <label for="exampleFormControlSelect2">Select your country</label>
-                        <select class="selectpicker countrypicker form-control" name="country" data-flag="true"></select>
+                        <select name="country" class="selectpicker countrypicker form-control" name="country" data-flag="true"></select>
                     </div>
 
                     <div class="form-group">
                         <label class="control-label">Phone</label>
-                        <input maxlength="100" type="phone" required="required" class="form-control textbox" id='textbox' placeholder="Enter your phone" />
+                        <input  name="phone" maxlength="100" type="phone" required="required" id='textbox' class="form-control" placeholder="Enter your phone" />
                     </div>
 
                     <div class="form-group">
                         <label class="control-label">Email</label>
-                        <input maxlength="100" type="email" required="required" class="form-control" placeholder="Enter your email" />
+                        <input name="email" maxlength="100" type="email" required="required" class="form-control" placeholder="Enter your email" />
                     </div>
                     <div class="btn-sectoin">
-                        <button class="btn btn-primary backBtn pull-right" type="button">Back</button>
-                        <input class="btn btn-primary nextBtn pull-right" type="submit" value="Next">
-
+                        <input class="btn btn-primary nextBtn pull-right" type="button" value="Next">
                     </div>
                 </div>
             </div>
@@ -100,39 +98,36 @@
                 <div class="panel-body">
                     <div class="form-group">
                         <label class="control-label">Company Name</label>
-                        <input maxlength="200" type="text" required="required" class="form-control" placeholder="Enter Company Name" />
+                        <input name="company" maxlength="200" type="text" required="required" class="form-control" placeholder="Enter Company Name" />
                     </div>
                     <div class="form-group">
                         <label class="control-label">Position</label>
-                        <input maxlength="200" type="text" required="required" class="form-control" placeholder="Enter Position" />
+                        <input name="position" maxlength="200" type="text" required="required" class="form-control" placeholder="Enter Position" />
                     </div>
                     <div class="form-group">
                         <label class="control-label">About Me</label>
-                        <textarea maxlength="200" type="text" required="required" class="form-control" placeholder="About me"></textarea>
+                        <textarea name="about_me" maxlength="200" type="text" required="required" class="form-control" placeholder="About me"></textarea>
                     </div>
                     <div class="form-group">
                         <label class="control-label">Photo</label>
-                        <input maxlength="200" type="file" required="required" class="form-control" placeholder="Your photo" />
+                        <input name="photo" maxlength="200" type="file" required="required" class="form-control" placeholder="Your photo" />
                     </div>
                     <div class="btn-sectoin">
-                        <button class="btn btn-primary backBtn pull-right" type="button">Back</button>
-                        <button class="btn btn-primary nextBtn pull-right" type="button">Next</button>
+                        <button  class="btn btn-primary nextBtn pull-right" type="submit">Submit</button>
                     </div>
                 </div>
             </div>
-
+            </form>
             <div class="panel panel-primary setup-content" id="step-3">
                 <div class="panel-heading">
                     <h3 class="panel-title">Social</h3>
                 </div>
                 <div class="panel-body">
                     <h1>Add social links</h1>
-                    <a onclick="Share.facebook('URL','TITLE','IMG_PATH','DESC')"> <img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="" width="50" height='50'></a>
-                    <a onclick="Share.twitter('URL','Check out this Meetup with SoCal AngularJS!')"> <img src="https://help.twitter.com/content/dam/help-twitter/brand/logo.png" alt="" width="50" height='50'></a>
                 </div>
-            </div> 
-        </form>
+            </div>
     </div>
+
     <script src="/assets/js/main.js"></script>
 </body>
 

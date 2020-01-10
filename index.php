@@ -1,11 +1,3 @@
-<?php
-
-require_once "./database/db.php";
-
-$connection = DB::getInstance();
-
-?>
-
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 
@@ -23,6 +15,8 @@ $connection = DB::getInstance();
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+    <scrip defer src="/assets/js/main.js"></script>
 </head>
 
 <body>
@@ -128,7 +122,7 @@ $connection = DB::getInstance();
             </div>
     </div>
 
-    <script src="/assets/js/main.js"></script>
+    
 </body>
 
 </html>

@@ -4,12 +4,12 @@ require_once 'database/db.php';
 
 $connection = DB::getInstance();
 
-echo json_encode($_FILES);
+//echo json_encode($_FILES);
 
 
 if (isset($_POST['fname']) && isset($_POST['lname'])) {
 
-	$photo = basename($_FILES["photo"]);
+	//$photo = basename($_FILES["photo"]);
 
 	$fname = htmlentities($_POST['fname']);
 	$lname = htmlentities($_POST['lname']);

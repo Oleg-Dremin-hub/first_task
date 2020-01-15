@@ -62,7 +62,7 @@ $(document).ready(function() {
 $('#quesform').submit(function(event) {
     event.preventDefault();
     $.ajax({
-        url: '/action.php',
+        url: 'action.php',
         type: 'post',
         data: $('#quesform').serialize(),
         success: function(result) {

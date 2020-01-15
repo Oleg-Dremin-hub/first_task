@@ -1,7 +1,7 @@
 <?php
 
-// require_once "./database/db.php";
-// $connection = DB::getInstance();
+require_once "./database/db.php";
+$connection = DB::getInstance();
 
 ?>
 
@@ -136,14 +136,15 @@
             <h3 class="panel-title">Social</h3>
         </div>
         <div class="panel-body">
-            <h1>Add social links</h1>
+            <h1>Social links</h1>
 
             <a onclick="Share.facebook('URL','TITLE','IMG_PATH','DESC')"> <img
                         src="https://www.facebook.com/images/fb_icon_325x325.png" alt="" width="50" height='50'></a>
             <a onclick="Share.twitter('URL','Check out this Meetup with SoCal AngularJS!')"> <img
                         src="https://help.twitter.com/content/dam/help-twitter/brand/logo.png" alt="" width="50"
                         height='50'></a>
-            <a href="members.php" target="_blank" >All Members</a>
+                        <br>
+            <a class='all_members' href="members.php" target="_blank" >All Members</a>
         </div>
     </div>
 </div>

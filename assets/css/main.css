@@ -61,5 +61,31 @@ body {
 .btn-sectoin {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.all_members {
+    font-size: 20px;
+    background-color: #428bca;
+    box-shadow: 0 5px 0 rgb(50, 58, 129);
+    color: white;
+    padding: 1em 1.5em;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.all_members:hover {
+    background-color: #428bca;
+}
+
+.all_members:active {
+    box-shadow: none;
+    top: 5px;
 }

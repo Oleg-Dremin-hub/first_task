@@ -67,7 +67,7 @@ $('#quesform').submit(function(event) {
         type: 'post',
         data: $('#quesform').serialize(),
         success: function(result) {
-            alert('Данные успешно сохранены!!!');
+            alert('Данные успешно сохранены!!!')
         }
     });
 });

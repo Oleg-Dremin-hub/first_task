@@ -5,7 +5,7 @@ function get_data()
 {
 	$conn = new mysqli('localhost', 'oleg_dev', '24062000', 'test');
 
-	$sql = "SELECT * FROM members";
+	$sql = "SELECT * FROM `members`";
 	$result = $conn->query($sql);
 
 	$test = [];

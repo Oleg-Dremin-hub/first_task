@@ -9,7 +9,7 @@ echo json_encode($_FILES);
 
 if (isset($_POST['fname']) && isset($_POST['lname'])) {
 
-	
+	$photo = basename($_FILES["photo"]);
 
 	$fname = htmlentities($_POST['fname']);
 	$lname = htmlentities($_POST['lname']);
@@ -21,10 +21,8 @@ if (isset($_POST['fname']) && isset($_POST['lname'])) {
 	$company = htmlentities($_POST['company']);
 	$position = htmlentities($_POST['position']);
 	$about_me = htmlentities($_POST['about_me']);
-	$photo = basename($_FILES["photo"]);
 
 	$connection->query('INSERT INTO `members`(first_name, last_name, birthdate, report_subject, country, phone, email, company, position, about_me, photo) 
      VALUES ("' . $fname . '", "' . $lname . '", "' . $birthdate . '", "' . $rs . '", "' . $country . '", "' . $phone . '", "' . $email . '", "' . $company . '", "' . $position . '", "' . $about_me . '", "' . file_get_contents($photo) . '")');
 }
-
 

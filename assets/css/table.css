@@ -1,3 +1,9 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 table.steelBlueCols {
     border: 5px solid #555555;
     background-color: #555555;

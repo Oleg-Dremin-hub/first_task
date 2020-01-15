@@ -3,7 +3,7 @@ require_once 'database/db.php';
 
 function get_data()
 {
-	$conn = new mysqli('localhost', 'oleg_dev', '24062000', 'test');
+	$conn = new mysqli('mysql:host=localhost;dbname=test', 'oleg_dev', '24062000');
 
 	$sql = "SELECT * FROM `members`";
 	$result = $conn->query($sql);
@@ -20,3 +20,4 @@ function get_data()
 
 	return $test;
 }
+

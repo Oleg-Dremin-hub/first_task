@@ -25,4 +25,3 @@ class DB
         return $this->_db->query($sql);
     }
 }
-

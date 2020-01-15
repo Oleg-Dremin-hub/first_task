@@ -1,7 +1,7 @@
 <?php
 
-require_once "./database/db.php";
-$connection = DB::getInstance();
+// require_once "./database/db.php";
+// $connection = DB::getInstance();
 
 ?>
 
